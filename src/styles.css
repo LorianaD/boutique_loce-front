@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header
+footer
+main {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a
+a:hover
+a:active
+a:visited {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+:root {
+    --space-md: 12px;
+
+    --size-logo: 24px;
+}

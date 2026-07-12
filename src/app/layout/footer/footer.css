@@ -1,0 +1,143 @@
+.footer {
+    display: flex;
+    padding: 48px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    background: #3D3533;
+    color: #FFFFFF;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer-top__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.footer-brand__logo {
+    width: var(--size-logo);
+}
+
+.footer-brand__title {
+    font-family: "Young Serif";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+
+.footer-description {
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.4px */
+    opacity: 0.8;
+    width: 100%;
+}
+
+.footer-top__container {
+    display: flex;
+    width: 150px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.footer-title {
+    font-family: Figtree;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.footer-nav__link {
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    opacity: 0.7;
+}
+
+.footer-social {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.footer-social__link {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-contact
+.footer-location {
+    color: #FFF;
+    font-family: Figtree;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.footer-bottom__line {
+    height: 1px;
+    align-self: stretch;
+    opacity: 0.1;
+    background: #FFFFFF;
+}
+
+.footer-bottom__copyright {
+    color: #FFF;
+    font-family: Figtree;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 900px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 26px;
+    }
+}

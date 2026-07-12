@@ -1,0 +1,48 @@
+.section-hero {
+    /* background-image: url("/images/background-hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    background: linear-gradient(0deg, rgba(61, 53, 51, 0.30) 0%, rgba(61, 53, 51, 0.30) 100%), url("/images/background-hero.png") lightgray 50% / cover no-repeat;
+
+    padding: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.section-hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.section-hero__title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Young Serif";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 70.4px */
+}
+
+.section-hero__description {
+    color: #FFF;
+    text-align: center;
+    font-family: Figtree;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
