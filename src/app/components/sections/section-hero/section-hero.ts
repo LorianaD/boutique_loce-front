@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Button } from '../../buttons/button/button';
 
 @Component({
@@ -7,4 +7,8 @@ import { Button } from '../../buttons/button/button';
   templateUrl: './section-hero.html',
   styleUrl: './section-hero.css',
 })
-export class SectionHero {}
+export class SectionHero {
+  @Input() title: string = '';
+  @Input() description: string = '';
+  @Input() btn_label: string = '';
+}

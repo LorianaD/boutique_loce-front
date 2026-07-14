@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-section-container',
@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './section-container.html',
   styleUrl: './section-container.css',
 })
-export class SectionContainer {}
+export class SectionContainer {
+  @Input() title: string = '';
+  @Input() description: string = '';
+  @Input() btn_label: string = '';
+}

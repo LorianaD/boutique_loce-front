@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SectionHero } from '../../components/sections/section-hero/section-hero';
 import { SectionContainer } from '../../components/sections/section-container/section-container';
 

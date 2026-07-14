@@ -1,1 +1,42 @@
-<p>products works!</p>
+<!-- Chargement -->
+@if (loading) {
+    <div>Chargement des produits...</div>
+}
+
+<!-- Erreur -->
+@if (error) {
+    <div class="erreur">
+        Impossible de charger les produits. Serveur Java démarré ?
+    </div>
+}
+
+<!-- Grille de produits -->
+@if (!loading && !error) {
+    <div class="grille">
+
+        @for (product of products; track product.id) {
+            <div class="carte">
+
+                <img [src]="'http://localhost:8080' + product.imageUrl" [alt]="product.name">
+
+                <div class="infos">
+                    <h3>{{ product.name }}</h3>
+                    <p>{{ product.description }}</p>
+                    <p class="prix">{{ product.price| currency:'EUR' }}</p>
+
+                    <!-- Lien vers la page détail -->
+                    <a [routerLink]="['/products', product.id]">
+                        Voir le détail
+                    </a>
+
+                    <!-- Désactivé si stock = 0 -->
+                    <!-- <button
+                        (click)="ajouterAuPanier(product)"
+                        [disabled]="produit.stock === 0">
+                        {{ produit.stock > 0 ? 'Ajouter au panier' : 'Rupture de stock' }}
+                    </button> -->
+                </div>
+            </div>
+        }
+    </div>
+}

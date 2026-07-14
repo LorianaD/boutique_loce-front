@@ -2,12 +2,12 @@
     <div class="section-hero__container">
         <div class="section-hero__text">
             <h2 class="section-hero__title">
-                Créé avec amour, fait à la main
+                {{ title }}
             </h2>
             <p class="section-hero__description">
-                Découvrez une collection unique d'objets artisanaux conçus pour embellir votre quotidien avec douceur et authenticité.
+                {{ description }}
             </p>
         </div>
-        <app-button variant="primary" label="Découvrir nos créations" />
+        <app-button variant='primary' [label]="btn_label" />
     </div>
 </section>
